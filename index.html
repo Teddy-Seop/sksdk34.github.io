@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+    <text y=%22.9em%22 font-size=%2290%22>🧰</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ed1e1caf2c.js"></script>
+  <link rel="stylesheet" href="assets/styles/layout.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="assets/js/smooth-scroll-5.3.3.js"></script>
+  <script type="text/javascript">
+    smoothScroll.init({
+      speed: 1125,
+      easing: 'easeInOutQuint',
+      offset: 0,
+      updateURL: false
+    });
+  </script>
+  <script  type="text/javascript">
+    $(document).ready(function(){
+      $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 1600; //scroll height in pixels
+    if(y_scroll_pos > scroll_pos_test) {
+      //initiates animation for skillbar
+      jQuery(document).ready(function(){
+        jQuery('.skillbar').each(function(){
+          jQuery(this).find('.skillbar-bar').animate({
+            width:jQuery(this).attr('data-percent')
+          },1000);//loading speed
+        });
+      });
+      //done!
+    }
+    });
+</script>
+</head>
+<body>
+  <div id="header">
+    <div class="center">
+      <div id="navigation-bar" class="animated bounceInDown">
+        <a class="name" data-scroll href="#"><span class="lf">SEOP</span><span class="rt">Portfolio</span></a>
+        <div class="navlinks-container">
+          <a class="navlink" data-scroll href="#about">About</a>
+          <a class="navlink" data-scroll href="#skills">Skills</a>
+          <a class="navlink" data-scroll href="#works">Works</a>
+          <a class="navlink" data-scroll href="#contact">Contact</a>
+          <a class="mobileNavLink" href="https://github.com/mujdat/lorem-ipsum-single-page" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a class="mobileNavLink" data-scroll href="#about" title="About"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+          <a class="mobileNavLink" data-scroll href="#skills" title="Skills"><i class="fa fa-star" aria-hidden="true"></i></a>
+          <a class="mobileNavLink" data-scroll href="#works" title="Works"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
+          <a class="mobileNavLink" data-scroll href="#contact" title="Contact"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div id="one-liner">
+        <div class="one-liner-content-wrapper">
+          <div class="one-liner-content">
+            <p class="animated bounceInDown">MINSEOP KIM</p>
+            <p class="animated bounceInDown">BACK-END DEVLEOPER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="center">
+      <h2 class="abt">About</h2>
+      <p class="abtText">
+        
+      </p>
+    </div>
+  </div>
+  <div id="skills">
+    <div class="center">
+      <h2 class="ski">Skills</h2>
+      <br><br>
+      <h2 class="ski">LANGUAGE</h2>
+      <div class="skillsTrioMainWrapper">
+        <div class="row">
+          <div class="fourcol">
+            <div class="skillsTrioWrap">
+              <div class="skillsTrioIMG">
+                <img src="assets/img/skills/java.svg" class="fa java" width="150px" height="150px"/>
+              </div>
+              <p class="skillsTrioDesctiption">
+                
+              </p>
+            </div>
+          </div>
+          <div class="fourcol">
+            <div class="skillsTrioWrap">
+              <div class="skillsTrioIMG">
+                <img src="assets/img/skills/js.png" class="fa java" width="150px" height="150px"/>
+              </div>
+              <p class="skillsTrioDesctiption">
+                
+              </p>
+            </div>
+          </div>
+          <div class="fourcol last">
+            <div class="skillsTrioWrap">
+              <div class="skillsTrioIMG">
+                <img src="assets/img/skills/python.png" class="fa java" width="150px" height="150px"/>
+              </div>
+              <p class="skillsTrioDesctiption">
+                
+              </p>
+            </div>
+          </div>
+          <br/><br/>
+          <h2 class="ski">FRAMEWORK</h2>
+          <div class="fourcol">
+            <div class="skillsTrioWrap">
+              <div class="skillsTrioIMG">
+                <img src="assets/img/skills/spring.png" class="fa java" width="150px" height="150px"/>
+              </div>
+              <p class="skillsTrioDesctiption">
+                
+              </p>
+            </div>
+          </div>
+          <div class="fourcol last">
+            <div class="skillsTrioWrap">
+              <div class="skillsTrioIMG">
+                <img src="assets/img/skills/express.png" class="fa java" width="250px" height="150px"/>
+              </div>
+              <p class="skillsTrioDesctiption">
+                
+              </p>
+            </div>
+          </div>
+          <div class="fourcol last">
+            <div class="skillsTrioWrap">
+              <div class="skillsTrioIMG">
+                <img src="assets/img/skills/django.png" class="fa java" width="250px" height="150px"/>
+              </div>
+              <p class="skillsTrioDesctiption">
+                
+              </p>
+            </div>
+          </div>
+          <h2 class="ski">LIBRARY & TOOL</h2>
+          <div class="sixcol">
+            <div class="skillsTrioWrap">
+              <div class="skillsTrioIMG">
+                <img src="assets/img/skills/react.png" class="fa java" width="150px" height="150px"/>
+              </div>
+              <p class="skillsTrioDesctiption">
+                
+              </p>
+            </div>
+          </div>
+          <div class="sixcol last">
+            <div class="skillsTrioWrap">
+              <div class="skillsTrioIMG">
+                <img src="assets/img/skills/git.png" class="fa java" width="150px" height="150px"/>
+              </div>
+              <p class="skillsTrioDesctiption">
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="works">
+    <div class="center">
+      <h2 class="wrk">Works</h2>
+      <div id="works-showcase" class="container">
+        <div class="row">
+          <div class="sixcol">
+            <div class="works-showcase-image">
+              <a href="https://github.com/sksdk34/Forder"><img src="assets/img/project/foodtruck.jpg" width="400px" height="300px"/></a>
+              <a href="https://github.com/sksdk34/Forder">
+                <div class="works-showcase-image-caption">
+                  <p>SpringBoot, JPA, MySQL</p>
+                  <p>Go to the github</p>
+                </div>
+              </a>
+            </div>
+            <h3 class="skillsTrioTittle">Forder</h3>
+            <p class="skillsTrioDesctiption" style="color: white;">
+              푸드트럭 상품에 대한 사용자의 주문 및 판매자의 주문 관리 어플리케이션입니다.
+            </p>
+            <div class="social">
+              <a href="https://github.com/sksdk34" class="github"><img src="assets/img/contact/github.png"  width="50px" height="50px"/></a>
+            </div>
+            <p></p>
+          </div>
+          <div class="sixcol last">
+            <div class="works-showcase-image">
+              <a href="https://github.com/sksdk34/AIOW"><img src="assets/img/project/aiow.jpg" width="400px" height="300px"/></a>
+              <a href="https://github.com/sksdk34/AIOW">
+                <div class="works-showcase-image-caption">
+                  <p>Express, React, MySQL</p>
+                  <p>Go to the github</p>
+                </div>
+              </a>
+            </div>
+            <h3 class="skillsTrioTittle">AIOW</h3>
+            <p class="skillsTrioDesctiption" style="color: white;">
+              실시간 소켓 통신을 이용한 협업 프로그램입니다.
+            </p>
+            <a href="https://github.com/sksdk34" class="github"><img src="assets/img/contact/github.png"  width="50px" height="50px"/></a>
+          </div>
+          <div class="sixcol">
+            <div class="works-showcase-image">
+              <a href="https://github.com/sksdk34/ML_HousePricingWeb"><img src="assets/img/project/housepricing.jpeg" width="400px" height="300px"/></a>
+              <a href="https://github.com/sksdk34/ML_HousePricingWeb">
+                <div class="works-showcase-image-caption">
+                  <p>Django, MySQL</p>
+                  <p>Go to the github</p>
+                </div>
+              </a>
+            </div>
+            <h3 class="skillsTrioTittle">부동산 시세 컨설팅</h3>
+            <p class="skillsTrioDesctiption" style="color: white;">
+              머신러닝을 이용한 인공지능 부동산 시세 컨설팅 어플리케이션입니다.
+            </p>
+            <a href="https://github.com/sksdk34" class="github"><img src="assets/img/contact/github.png"  width="50px" height="50px"/></a>
+          </div>
+          <div class="sixcol last">
+            <div class="works-showcase-image">
+              <a href="https://github.com/sksdk34/SpringShop"><img src="assets/img/project/shoppingmall.png" width="400px" height="300px"/></a>
+              <a href="https://github.com/sksdk34/SpringShop">
+                <div class="works-showcase-image-caption">
+                  <p>Spring, MySQL</p>
+                  <p>Go to the github</p>
+                </div>
+              </a>
+            </div>
+            <h3 class="skillsTrioTittle">쇼핑몰</h3>
+            <p class="skillsTrioDesctiption" style="color: white;">
+              전자정부 프레임워크를 기반으로한 쇼핑몰 어플리케이션입니다.
+            </p>
+            <a href="https://github.com/sksdk34" class="github"><img src="assets/img/contact/github.png"  width="50px" height="50px"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="center-contact">
+      <h2 class="con">Contact</h2>
+      <p class="conText"><a data-scroll href="#contact" class="gmail"><i class="fa fa-envelope"></i> gim34@naver.com</a></p>
+      <div id="social">
+        <a href="https://github.com/sksdk34" class="github"><img src="assets/img/contact/github.png"/></a>
+        <a href="https://kmseop.tistory.com/" class="blog"><img src="assets/img/contact/blog.png"/></a>
+      </div>
+    </div>
+  </div>
+  <div class="sticky-footer">
+      made by<a href="https://github.com/mujdat"><i class="fa fa-github"></i> mujdat</a> /
+      <a href="https://mujdat.dev"><i class="fa fa-globe"></i> homepage</a> /
+      <a href="https://twitter.com/mujdatkorkmaz"><i class="fa fa-twitter"></i> twitter</a>  
+  </div>
+  <a data-scroll href="#" id="elevator"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</body>
+</html>
