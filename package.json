@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sksdk34/sksdk34.github.io/issues"
   },
-  "homepage": "https://sksdk34.github.io/sksdk34.github.io"
+  "homepage": "https://sksdk34.github.io/sksdk34.github.io",
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
 }
