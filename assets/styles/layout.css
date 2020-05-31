@@ -23,12 +23,12 @@ h2.wrk {color: #fff; margin-bottom: 60px; text-transform: uppercase;}
 h2.con {color: #111; margin-bottom: 25px; text-transform: uppercase;}
 h3.skillsTrioTittle {text-align: center; font-size: 22px;}
 
-.center {
+/* .center {
   max-width: 960px;
   display: block;
   margin: 0 auto;
   text-align: left;
-}
+} */
 
 .center-contact {
   max-width: 720px;
@@ -507,6 +507,35 @@ div.works-showcase-image-caption {
 .sticky-footer a:hover {
   border-bottom: 1px solid #333;
   padding-bottom: 5px;
+}
+
+@media (max-width:6144px) {
+  .row, .body, .container {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #navigation-bar {
+    padding: 30px 30px 30px 30px;
+  }
+  #about {
+    padding: 100px 50px 70px 50px;
+  }
+  #skills {
+    padding: 100px 50px 85px 50px;
+  }
+  .skillsTrioMainWrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #works {
+    padding: 100px 50px 65px 50px;
+  }
+  #contact {
+    padding: 100px 50px 150px 50px;
+  }       
 }
 
 @media (max-width:1024px) {
