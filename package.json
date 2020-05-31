@@ -18,5 +18,8 @@
   "homepage": "https://sksdk34.github.io/sksdk34.github.io",
   "devDependencies": {
     "push-dir": "^0.4.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
