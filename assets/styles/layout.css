@@ -1,5 +1,5 @@
-@import url('normalize.css');
-@import url('grid.css');
+@import url('_normalize.css');
+@import url('_grid.css');
 
 body {
   background-color: #313638;
