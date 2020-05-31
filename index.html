@@ -10,43 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <script src="https://use.fontawesome.com/ed1e1caf2c.js"></script>
   <link rel="stylesheet" href="assets/styles/layout.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="assets/js/smooth-scroll-5.3.3.js"></script>
-  <script type="text/javascript">
-    smoothScroll.init({
-      speed: 1125,
-      easing: 'easeInOutQuint',
-      offset: 0,
-      updateURL: false
-    });
-  </script>
-  <script  type="text/javascript">
-    $(document).ready(function(){
-      $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
-      });
-    });
-  </script>
-  <script type="text/javascript">
-    $(window).on('scroll', function() {
-    var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = 1600; //scroll height in pixels
-    if(y_scroll_pos > scroll_pos_test) {
-      //initiates animation for skillbar
-      jQuery(document).ready(function(){
-        jQuery('.skillbar').each(function(){
-          jQuery(this).find('.skillbar-bar').animate({
-            width:jQuery(this).attr('data-percent')
-          },1000);//loading speed
-        });
-      });
-      //done!
-    }
-    });
-</script>
 </head>
 <body>
   <div id="header">
@@ -271,3 +235,40 @@
   <a data-scroll href="#" id="elevator"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </body>
 </html>
+
+<script src="https://use.fontawesome.com/ed1e1caf2c.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="assets/js/smooth-scroll-5.3.3.js"></script>
+<script type="text/javascript">
+  smoothScroll.init({
+    speed: 1125,
+    easing: 'easeInOutQuint',
+    offset: 0,
+    updateURL: false
+  });
+</script>
+<script  type="text/javascript">
+  $(document).ready(function(){
+    $('.scrollToTop').click(function(){
+      $('html, body').animate({scrollTop : 0},800);
+      return false;
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(window).on('scroll', function() {
+  var y_scroll_pos = window.pageYOffset;
+  var scroll_pos_test = 1600; //scroll height in pixels
+  if(y_scroll_pos > scroll_pos_test) {
+    //initiates animation for skillbar
+    jQuery(document).ready(function(){
+      jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },1000);//loading speed
+      });
+    });
+    //done!
+  }
+  });
+</script>
